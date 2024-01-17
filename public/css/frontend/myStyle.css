@@ -1,0 +1,62 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.tag-field, .tag-field-phone {
+  display: flex;
+  flex-wrap: wrap;
+  height: 42px;
+  padding: 3px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  height: 35px;
+  margin-right: 5px;
+  padding: 0 8px;
+  color: #fff;
+  background: #EF562D;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.tag-close {
+  display: inline-block;
+  margin-left: 0;
+  width: 0;
+  transition: 0.2s all;
+  overflow: hidden;
+}
+
+.tag:hover .tag-close {
+  margin-left: 10px;
+  width: 10px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu{
+    width: 220px;
+}
+
+.side-menu-item:hover{
+    background: #F2F2F2;
+    border-right: solid 4px #EF562D;
+}
+
+input:checked + label {
+	border-color: black;
+	box-shadow: 0 10px 15px -3px rgba(239, 86, 45, 1), 0 4px 6px -2px rgba(239, 86, 45, 1);
+}

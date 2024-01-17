@@ -1,0 +1,124 @@
+.title1{
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+}
+.housePreviewBox{
+    /* width: 21.8%; */
+    border: solid 1px #C4C4C4;
+}
+.black-text{
+    color: #383838;
+}
+.gray-text{
+    color: #888686;
+}
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: white;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 8px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 8px;
+}
+.open-modal {
+    visibility: visible;
+    z-index: 10;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    transition: all 0.3s linear;
+    z-index: 10;
+    background: rgba(0,0,0,0.3);
+}
+.modal-container {
+    background: #fff;
+    border-radius: 0.5rem;
+    width: 90vw;
+    height: 70vh;
+    max-width: 620px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1rem;
+    background: transparent;
+    border-color: transparent;
+    color: hsl(360, 67%, 44%);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.close-btn:hover {
+    color: hsl(360, 71%, 66%);
+    transform: scale(1.3);
+}
+
+.myBox{
+    max-width: 400px;
+}
+
+.bankBox {
+    width:97.5%;
+}
+
+@media screen and (max-width: 450px) {
+    .title1{
+        font-size: 15px;
+    }
+    .housePreviewBox{
+        /* width: 100%; */
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .housePreviewBox{
+        /* width: 50%; */
+        margin-left: 10px;
+    }
+    .propDisplay{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 768px) {
+    .housePreviewBox{
+        margin-left: 10px;
+    }
+    .myBox{
+        max-width: none;
+    }
+    .bankBox{
+        width:47.5%;
+    }
+}
